@@ -37,7 +37,7 @@ You can configure this with the setting:
 ; 
 
 ; Starting Jack-in: (cd /Users/yasuki.okuyama/pra/clojure-app; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
-; Using host:port 127.0.0.1:62607 ...
+; Using host:port 127.0.0.1:51565 ...
 ; Hooking up nREPL sessions ...
 ; Connected session: clj
 ; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
@@ -48,27 +48,149 @@ about why stdout printed to this file is prepended with `;` to be line comments.
 clj꞉clojure-app.core꞉> 
 ; Jack-in done.
 clj꞉clojure-app.core꞉> 
-; nREPL Connection was closed
-; Jacking in...
-; Connecting using "Leiningen" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Starting Jack-in: (cd /Users/yasuki.okuyama/pra/clojure-app; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
-; Using host:port 127.0.0.1:62620 ...
-; Hooking up nREPL sessions ...
-; Connected session: clj
-; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+"こんにちは、テストさん！"
+clj꞉clojure-app.core꞉> 
+; Syntax error compiling at (src/clojure_app/core.clj:0:0).
+; Unable to resolve symbol: dynamic-keyword in this context
+clj꞉clojure-app.core꞉> 
+:dynamic-keyword
+clj꞉clojure-app.core꞉> 
+; Syntax error compiling at (src/clojure_app/core.clj:0:0).
+; Unable to resolve symbol: dynamic-keyword in this context
+clj꞉clojure-app.core꞉> 
+#function[clojure.core/keyword]
+clj꞉clojure-app.core꞉> 
+:dynamic-keyword
+clj꞉clojure-app.core꞉> 
+#function[clojure.core/keyword]
+clj꞉clojure-app.core꞉> 
+; Syntax error compiling at (src/clojure_app/core.clj:0:0).
+; Unable to resolve symbol: dynamic-keyword in this context
+clj꞉clojure-app.core꞉> 
+:dynamic-keyword
+clj꞉clojure-app.core꞉> 
+:dynamic-keyword
+clj꞉clojure-app.core꞉> 
+:dynamic-keyword
+clj꞉clojure-app.core꞉> 
+:dynamic-keyword
+clj꞉clojure-app.core꞉> 
+:dynamic-keyword
+clj꞉clojure-app.core꞉> 
+:user/name
+clj꞉clojure-app.core꞉> 
+"name"
+clj꞉clojure-app.core꞉> 
+:user/name
+clj꞉clojure-app.core꞉> 
+"user-name"
+clj꞉clojure-app.core꞉> 
+"user"
+clj꞉clojure-app.core꞉> 
 nil
 clj꞉clojure-app.core꞉> 
-; Jack-in done.
+nil
 clj꞉clojure-app.core꞉> 
-(greet "aaa")
-"こんにちは、aaaさん！"
+"aaa"
 clj꞉clojure-app.core꞉> 
-(-main)
-; こんにちは、世界さん！
-; Clojureアプリが動いています！
+#'clojure-app.core/user
+clj꞉clojure-app.core꞉> 
+"太郎"
+clj꞉clojure-app.core꞉> 
+25
+clj꞉clojure-app.core꞉> 
+nil
+clj꞉clojure-app.core꞉> 
+"未設定"
+clj꞉clojure-app.core꞉> 
+; Syntax error compiling at (src/clojure_app/core.clj:25:1).
+; Unable to resolve symbol: company in this context
+clj꞉clojure-app.core꞉> 
+; Syntax error compiling at (src/clojure_app/core.clj:25:1).
+; Unable to resolve symbol: company in this context
+clj꞉clojure-app.core꞉> 
+#'clojure-app.core/company
+clj꞉clojure-app.core꞉> 
+"ABC Corp"
+clj꞉clojure-app.core꞉> 
+{:name "taro", :dept :engineering}
+clj꞉clojure-app.core꞉> 
+"taro"
+clj꞉clojure-app.core꞉> 
+"花子"
+clj꞉clojure-app.core꞉> 
+6
+clj꞉clojure-app.core꞉> 
+10
+clj꞉clojure-app.core꞉> 
+5
+clj꞉clojure-app.core꞉> 
+7
+clj꞉clojure-app.core꞉> 
+#'clojure-app.core/company
+clj꞉clojure-app.core꞉> 
+#'clojure-app.core/my-data
+clj꞉clojure-app.core꞉> 
+; Syntax error compiling def at (src/clojure_app/core.clj:35:1).
+; First argument to def must be a Symbol
+clj꞉clojure-app.core꞉> 
+; Syntax error reading source at (REPL:35:12).
+; Invalid number: 123mmm
+clj꞉clojure-app.core꞉> 
+#'clojure-app.core/mmm
+clj꞉clojure-app.core꞉> 
+company
+clj꞉clojure-app.core꞉> 
+company
+clj꞉clojure-app.core꞉> 
+#'clojure-app.core/user-count
+clj꞉clojure-app.core꞉> 
+#'clojure-app.core/is-active?
+clj꞉clojure-app.core꞉> 
+#'clojure-app.core/api-endpoint
+clj꞉clojure-app.core꞉> 
+100
+clj꞉clojure-app.core꞉> 
+user-count
+clj꞉clojure-app.core꞉> 
+100
+clj꞉clojure-app.core꞉> 
+true
+clj꞉clojure-app.core꞉> 
+#'clojure-app.core/calculate-total
+clj꞉clojure-app.core꞉> 
+#function[clojure-app.core/calculate-total]
+clj꞉clojure-app.core꞉> 
+6
+clj꞉clojure-app.core꞉> 
+"ABC Corp"
+clj꞉clojure-app.core꞉> 
+"ABC Corp"
+clj꞉clojure-app.core꞉> 
+; Syntax error compiling at (src/clojure_app/core.clj:42:1).
+; Unable to resolve symbol: hello in this context
+clj꞉clojure-app.core꞉> 
+#'clojure-app.core/hello
+clj꞉clojure-app.core꞉> 
+; Hello, okuyama
+nil
+clj꞉clojure-app.core꞉> 
+#'clojure-app.core/hello
+clj꞉clojure-app.core꞉> 
+; Hello, okuyama
+nil
+clj꞉clojure-app.core꞉> 
+; Hello, 佐藤
+nil
+clj꞉clojure-app.core꞉> 
+; Syntax error compiling at (src/clojure_app/core.clj:45:12).
+; Unable to resolve symbol: username in this context
+clj꞉clojure-app.core꞉> 
+; Syntax error compiling at (src/clojure_app/core.clj:45:12).
+; Unable to resolve symbol: username in this context
+clj꞉clojure-app.core꞉> 
+#'clojure-app.core/hello2
+clj꞉clojure-app.core꞉> 
+; Hello2, ppp
 nil
 clj꞉clojure-app.core꞉> 

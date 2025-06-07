@@ -15,3 +15,13 @@ lein run
 3. プロジェクトタイプで "Leiningen" を選択
 4. 立ち上がったところで関数を実行する。
 ![alt text](image.png)
+
+ファイルの特定の関数をデバックする方法
+![alt text](image-1.png)
+
+
+## 学習
+ターミナルで学習する
+```
+lein repl
+```
