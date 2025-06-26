@@ -36,8 +36,8 @@ You can configure this with the setting:
 ;   - See https://calva.io/connect-sequences/
 ; 
 
-; Starting Jack-in: (cd /Users/yasuki.okuyama/pra/clojure-app; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
-; Using host:port 127.0.0.1:51565 ...
+; Starting Jack-in: (cd /Users/yasuki.okuyama/pra/clj-pra; lein update-in :dependencies conj '[nrepl,"1.3.1"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.55.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless)
+; Using host:port 127.0.0.1:63099 ...
 ; Hooking up nREPL sessions ...
 ; Connected session: clj
 ; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
@@ -48,149 +48,116 @@ about why stdout printed to this file is prepended with `;` to be line comments.
 clj꞉clojure-app.core꞉> 
 ; Jack-in done.
 clj꞉clojure-app.core꞉> 
-"こんにちは、テストさん！"
+#'clojure-app.core/codepoint-count
 clj꞉clojure-app.core꞉> 
-; Syntax error compiling at (src/clojure_app/core.clj:0:0).
-; Unable to resolve symbol: dynamic-keyword in this context
+5
 clj꞉clojure-app.core꞉> 
-:dynamic-keyword
+1
 clj꞉clojure-app.core꞉> 
-; Syntax error compiling at (src/clojure_app/core.clj:0:0).
-; Unable to resolve symbol: dynamic-keyword in this context
+#'clojure-app.core/char-count
 clj꞉clojure-app.core꞉> 
-#function[clojure.core/keyword]
+5
 clj꞉clojure-app.core꞉> 
-:dynamic-keyword
-clj꞉clojure-app.core꞉> 
-#function[clojure.core/keyword]
-clj꞉clojure-app.core꞉> 
-; Syntax error compiling at (src/clojure_app/core.clj:0:0).
-; Unable to resolve symbol: dynamic-keyword in this context
-clj꞉clojure-app.core꞉> 
-:dynamic-keyword
-clj꞉clojure-app.core꞉> 
-:dynamic-keyword
-clj꞉clojure-app.core꞉> 
-:dynamic-keyword
-clj꞉clojure-app.core꞉> 
-:dynamic-keyword
-clj꞉clojure-app.core꞉> 
-:dynamic-keyword
-clj꞉clojure-app.core꞉> 
-:user/name
-clj꞉clojure-app.core꞉> 
-"name"
-clj꞉clojure-app.core꞉> 
-:user/name
-clj꞉clojure-app.core꞉> 
-"user-name"
-clj꞉clojure-app.core꞉> 
-"user"
-clj꞉clojure-app.core꞉> 
-nil
-clj꞉clojure-app.core꞉> 
-nil
-clj꞉clojure-app.core꞉> 
-"aaa"
-clj꞉clojure-app.core꞉> 
-#'clojure-app.core/user
-clj꞉clojure-app.core꞉> 
-"太郎"
-clj꞉clojure-app.core꞉> 
-25
-clj꞉clojure-app.core꞉> 
-nil
-clj꞉clojure-app.core꞉> 
-"未設定"
-clj꞉clojure-app.core꞉> 
-; Syntax error compiling at (src/clojure_app/core.clj:25:1).
-; Unable to resolve symbol: company in this context
-clj꞉clojure-app.core꞉> 
-; Syntax error compiling at (src/clojure_app/core.clj:25:1).
-; Unable to resolve symbol: company in this context
-clj꞉clojure-app.core꞉> 
-#'clojure-app.core/company
-clj꞉clojure-app.core꞉> 
-"ABC Corp"
-clj꞉clojure-app.core꞉> 
-{:name "taro", :dept :engineering}
-clj꞉clojure-app.core꞉> 
-"taro"
-clj꞉clojure-app.core꞉> 
-"花子"
-clj꞉clojure-app.core꞉> 
-6
+2
 clj꞉clojure-app.core꞉> 
 10
 clj꞉clojure-app.core꞉> 
 5
 clj꞉clojure-app.core꞉> 
-7
+10
 clj꞉clojure-app.core꞉> 
-#'clojure-app.core/company
+5
 clj꞉clojure-app.core꞉> 
-#'clojure-app.core/my-data
+10
 clj꞉clojure-app.core꞉> 
-; Syntax error compiling def at (src/clojure_app/core.clj:35:1).
-; First argument to def must be a Symbol
-clj꞉clojure-app.core꞉> 
-; Syntax error reading source at (REPL:35:12).
-; Invalid number: 123mmm
-clj꞉clojure-app.core꞉> 
-#'clojure-app.core/mmm
-clj꞉clojure-app.core꞉> 
-company
-clj꞉clojure-app.core꞉> 
-company
-clj꞉clojure-app.core꞉> 
-#'clojure-app.core/user-count
-clj꞉clojure-app.core꞉> 
-#'clojure-app.core/is-active?
-clj꞉clojure-app.core꞉> 
-#'clojure-app.core/api-endpoint
-clj꞉clojure-app.core꞉> 
-100
-clj꞉clojure-app.core꞉> 
-user-count
-clj꞉clojure-app.core꞉> 
-100
-clj꞉clojure-app.core꞉> 
-true
-clj꞉clojure-app.core꞉> 
-#'clojure-app.core/calculate-total
-clj꞉clojure-app.core꞉> 
-#function[clojure-app.core/calculate-total]
-clj꞉clojure-app.core꞉> 
-6
-clj꞉clojure-app.core꞉> 
-"ABC Corp"
-clj꞉clojure-app.core꞉> 
-"ABC Corp"
-clj꞉clojure-app.core꞉> 
-; Syntax error compiling at (src/clojure_app/core.clj:42:1).
-; Unable to resolve symbol: hello in this context
-clj꞉clojure-app.core꞉> 
-#'clojure-app.core/hello
-clj꞉clojure-app.core꞉> 
-; Hello, okuyama
+; 通常の文字列: Hello
+; コードポイント数: 5
+; char数: 5
+; 
+; 日本語文字列: こんにちは
+; コードポイント数: 5
+; char数: 5
+; 
+; 絵文字を含む文字列: Hello😀
+; コードポイント数: 6
+; char数: 7
+; 
+; 複雑な絵文字: 👨‍👩‍👧‍👦
+; コードポイント数: 7
+; char数: 11
 nil
 clj꞉clojure-app.core꞉> 
-#'clojure-app.core/hello
+; Syntax error compiling at (src/clojure_app/core.clj:42:7).
+; Unable to resolve symbol: length-equals? in this context
+; 
+; Execution error (IllegalStateException) at clojure-app.core/eval10252 (REPL:47).
+; Attempting to call unbound fn: #'clojure-app.core/validate-input
+; 
+; Execution error (IllegalStateException) at clojure-app.core/eval10254 (REPL:48).
+; Attempting to call unbound fn: #'clojure-app.core/validate-input
+; 
+; Execution error (IllegalStateException) at clojure-app.core/eval10256 (REPL:49).
+; Attempting to call unbound fn: #'clojure-app.core/validate-input
 clj꞉clojure-app.core꞉> 
-; Hello, okuyama
+; Syntax error compiling at (src/clojure_app/core.clj:42:7).
+; Unable to resolve symbol: length-equals? in this context
+clj꞉clojure-app.core꞉> 
+#'clojure-app.core/length-equals?
+clj꞉clojure-app.core꞉> 
+#'clojure-app.core/validate-input
+clj꞉clojure-app.core꞉> 
+; ✓ 入力「Hello」は5文字です
+; ✓ 入力「Hello😀」は6文字です
+; ✗ 入力「Hello😀」は7文字ではありません（実際は6文字）
 nil
 clj꞉clojure-app.core꞉> 
-; Hello, 佐藤
+; ✓ 投稿可能です（9/280文字）
+; ✓ 投稿可能です（14/280文字）
+; ✗ 文字数制限を超えています（290/280文字）
 nil
 clj꞉clojure-app.core꞉> 
-; Syntax error compiling at (src/clojure_app/core.clj:45:12).
-; Unable to resolve symbol: username in this context
-clj꞉clojure-app.core꞉> 
-; Syntax error compiling at (src/clojure_app/core.clj:45:12).
-; Unable to resolve symbol: username in this context
-clj꞉clojure-app.core꞉> 
-#'clojure-app.core/hello2
-clj꞉clojure-app.core꞉> 
-; Hello2, ppp
-nil
-clj꞉clojure-app.core꞉> 
+#'clojure-app.core-test/a-test
+clj꞉clojure-app.core-test꞉> 
+; Running tests for the following namespaces:
+;   clojure-app.core-test
+;   clojure-app.core
+
+; FAIL in clojure-app.core-test/a-test (NO_SOURCE_FILE:7):
+; FIXME, I fail.
+; expected:
+(= 0 1)
+
+; actual:
+(not (= 0 1))
+
+; 1 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 1
+clj꞉clojure-app.core-test꞉> 
+#'clojure-app.core-test/test-string-lengths
+clj꞉clojure-app.core-test꞉> 
+#'clojure-app.core-test/basic-string-test
+clj꞉clojure-app.core-test꞉> 
+; Running tests for the following namespaces:
+;   clojure-app.core-test
+;   clojure-app.core
+
+; FAIL in clojure-app.core-test/a-test (NO_SOURCE_FILE:7):
+; FIXME, I fail.
+; expected:
+(= 0 1)
+
+; actual:
+(not (= 0 1))
+
+; ERROR in clojure-app.core-test/basic-string-test (Reflector.java:14):
+; 英語の基本文字列: コードポイント数が期待値と異なります: Hello
+; error: java.lang.IllegalArgumentException: No matching field found: length for class clojure.core$test (Reflector.java:14)
+; expected:
+(= expected-codepoints (codepoint-count test))
+
+; 3 tests finished, problems found. 😭 errors: 1, failures: 1, ns: 1, vars: 2
+clj꞉clojure-app.core-test꞉> 
+#'clojure-app.core-test/test-string-lengths
+clj꞉clojure-app.core-test꞉> 
+; Running test: basic-string-test…
+; 2 tests finished, all passing 👍, ns: 1, vars: 1
+clj꞉clojure-app.core-test꞉> 
