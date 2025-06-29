@@ -63,3 +63,4 @@
 ;; 長いテキストの例
 (def long-text (apply str (repeat 290 "あ")))
 (tweet-length-check long-text)
+
